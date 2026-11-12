@@ -16,6 +16,7 @@ if (service_charge === "s") {
 } else {
     console.log(`A conta ficou R$${bill} no total`)
     bill = bill / people_number
+    
     alert(`A conta ficou R$${bill.toFixed(2)} para cada`)
     console.log(`A conta ficou R$${bill} para cada`)
 }
