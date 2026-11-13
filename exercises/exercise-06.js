@@ -1,6 +1,7 @@
 let gasoline_price = parseFloat(prompt("Qual o preço da gasolina: "))
 let ethanol_price = parseFloat(prompt("Qual o preço do Etanol: "))
 
+// calulo da diferença de preço
 let difference = ethanol_price / gasoline_price * 100
 
 if (difference < 70) {
