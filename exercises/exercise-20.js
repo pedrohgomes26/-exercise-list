@@ -4,12 +4,13 @@ for (let minutes = 8 * 60 ; minutes <= 12 * 60; minutes += 15) {
 
     
     if (hours < 10 && min < 10) {
-        console.log(`0${h}:0${m}`)
+        console.log(`0${hours}:0${min}`)
     } else if (hours < 10) {
-        console.log(`0${h}:${m}`)
+        console.log(`0${hours}:${min}`)
     } else if (min < 10) {
-        console.log(`${h}:0${m}`)
+        console.log(`${hours}:0${min}`)
+    } else {
+        console.log(`${hours}:${min}`)
     }
     
-    console.log(`${h}:${m}`)
 }
