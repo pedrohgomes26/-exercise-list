@@ -8,12 +8,13 @@ let investment_percentage = investment_income / 100
 let investment_increase = 0
 
 
-while (investment_increase < investment_double) {
+while (investment_double > investment_value) {
     mounths++
 
     let increase = investment_value * investment_percentage
-    investment_increase = investment_value + increase
+    investment_value = investment_value + increase
 
-    console.log(investment_increase)    
+
 }
-console.log(`vão ser necessarios ${mounths} meses para o valor ${investment_value} dobrar para ${investment_increase}`)
+
+console.log(`vão ser necessarios ${mounths} meses para dobrar para R$${investment_double}`)
