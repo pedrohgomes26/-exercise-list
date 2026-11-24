@@ -1,29 +1,50 @@
 let final_number = Number(prompt("Qual o final da placa do carro: "))
-let day = prompt("Qual dia da semana e: ").toLowerCase()
+let day = prompt("Qual dia da semana e: ").trim().toLowerCase()
 let hour = Number(prompt("Que horas são: "))
+
 
 let restrict_plate = false
 let valid_day = true
 
 switch (day) {
     case "segunda":
-        restrict_plate = final_number === 1 || final_number === 2
+        if (final_number === 1 || final_number === 2) {
+            restrict_plate = true
+        } else {
+            restrict_plate = false
+        }
         break
-    case "terca":
-        restrict_plate = final_number === 3 || final_number === 4
+    case "terça":
+        if (final_number === 3 || final_number === 4) {
+            restrict_plate = true
+        } else {
+            restrict_plate = false
+        }
         break
     case "quarta":
-        restrict_plate = final_number === 5 || final_number === 6
+        if (final_number === 5 || final_number === 6) {
+            restrict_plate = true
+        } else {
+            restrict_plate = false
+        }
         break
     case "quinta":
-        restrict_plate = final_number === 7 || final_number === 8
+        if (final_number === 7 || final_number === 8) {
+            restrict_plate = true
+        } else {
+            restrict_plate = false
+        }
         break
     case "sexta":
-        restrict_plate = final_number === 9 || final_number === 0
+        if (final_number === 9 || final_number === 0) {
+            restrict_plate = true
+        } else {
+            restrict_plate = false
+        }
         break
     case "sabado":
     case "domingo":
-        restrict_plate = false 
+        restrict_plate = false
         break
     default:
         valid_day = false
