@@ -1,4 +1,4 @@
-let next = "sim"
+let next = "s"
 let item = parseFloat(prompt("Qual o preço do produto"))
 let high_item = 0
 let count_items = 1
